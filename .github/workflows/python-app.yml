@@ -38,8 +38,8 @@ jobs:
       env:
         #HEROKU_TOKEN: "3b6d13a6-4af2-4082-9512-21f5721ea7f7" 
         HEROKU_TOKEN: ${{ secrets.HEROKU_TOKEN }}
-        HEROKU_APP_NAME: "canser-test"
-        #HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
+        #HEROKU_APP_NAME: "canser-test"
+        HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
       if: github.ref == 'refs/heads/main'
       # && job.status == 'success'
       run: |
